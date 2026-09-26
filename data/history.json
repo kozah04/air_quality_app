@@ -86,5 +86,49 @@
     "ozone": 123.0,
     "nitrogen_dioxide": 1.5,
     "timestamp": "2026-09-25 11:47:17"
+  },
+  {
+    "location": "Sokoto",
+    "latitude": 13.06269,
+    "longitude": 5.24322,
+    "aqi": 102,
+    "pm2_5": 16.9,
+    "pm10": 28.8,
+    "ozone": 93.0,
+    "nitrogen_dioxide": 0.9,
+    "timestamp": "2026-09-26 11:13:12"
+  },
+  {
+    "location": "Kubwar Purwa",
+    "latitude": 26.93016,
+    "longitude": 82.33034,
+    "aqi": 48,
+    "pm2_5": 9.7,
+    "pm10": 10.0,
+    "ozone": 77.0,
+    "nitrogen_dioxide": 6.4,
+    "timestamp": "2026-09-26 11:51:21"
+  },
+  {
+    "location": "Lagos",
+    "latitude": 6.45407,
+    "longitude": 3.39467,
+    "aqi": 59,
+    "pm2_5": 12.7,
+    "pm10": 17.5,
+    "ozone": 55.0,
+    "nitrogen_dioxide": 2.1,
+    "timestamp": "2026-09-26 11:52:00"
+  },
+  {
+    "location": "Kaduna",
+    "latitude": 10.52641,
+    "longitude": 7.43879,
+    "aqi": 66,
+    "pm2_5": 18.7,
+    "pm10": 29.0,
+    "ozone": 55.0,
+    "nitrogen_dioxide": 7.6,
+    "timestamp": "2026-09-26 22:12:30"
   }
 ]
