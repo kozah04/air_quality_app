@@ -1,0 +1,90 @@
+[
+  {
+    "location": "Abuja",
+    "latitude": 9.05785,
+    "longitude": 7.49508,
+    "aqi": 97,
+    "pm2_5": 13.4,
+    "pm10": 17.8,
+    "ozone": 120.0,
+    "nitrogen_dioxide": 2.9,
+    "timestamp": "2026-09-24 16:38:09"
+  },
+  {
+    "location": "Bamawa",
+    "latitude": 12.33833,
+    "longitude": 6.75847,
+    "aqi": 159,
+    "pm2_5": 26.1,
+    "pm10": 77.8,
+    "ozone": 113.0,
+    "nitrogen_dioxide": 1.0,
+    "timestamp": "2026-09-24 16:42:00"
+  },
+  {
+    "location": "Bamawa",
+    "latitude": 12.33833,
+    "longitude": 6.75847,
+    "aqi": 159,
+    "pm2_5": 26.1,
+    "pm10": 77.8,
+    "ozone": 113.0,
+    "nitrogen_dioxide": 1.0,
+    "timestamp": "2026-09-24 16:42:38"
+  },
+  {
+    "location": "Bamawa",
+    "latitude": 12.33833,
+    "longitude": 6.75847,
+    "aqi": 159,
+    "pm2_5": 26.1,
+    "pm10": 77.8,
+    "ozone": 113.0,
+    "nitrogen_dioxide": 1.0,
+    "timestamp": "2026-09-24 16:43:22"
+  },
+  {
+    "location": "Nyanya",
+    "latitude": 10.15026,
+    "longitude": 33.44118,
+    "aqi": 48,
+    "pm2_5": 10.2,
+    "pm10": 20.0,
+    "ozone": 92.0,
+    "nitrogen_dioxide": 0.5,
+    "timestamp": "2026-09-24 16:44:05"
+  },
+  {
+    "location": "Kubwar Purwa",
+    "latitude": 26.93016,
+    "longitude": 82.33034,
+    "aqi": 58,
+    "pm2_5": 7.1,
+    "pm10": 7.2,
+    "ozone": 50.0,
+    "nitrogen_dioxide": 6.8,
+    "timestamp": "2026-09-24 16:55:34"
+  },
+  {
+    "location": "Garki",
+    "latitude": 12.43456,
+    "longitude": 9.19028,
+    "aqi": 166,
+    "pm2_5": 40.7,
+    "pm10": 75.4,
+    "ozone": 123.0,
+    "nitrogen_dioxide": 6.2,
+    "timestamp": "2026-09-24 17:03:07"
+  },
+  {
+    "location": "Kano",
+    "latitude": 12.00012,
+    "longitude": 8.51672,
+    "aqi": 178,
+    "pm2_5": 32.1,
+    "pm10": 70.3,
+    "ozone": 123.0,
+    "nitrogen_dioxide": 1.5,
+    "timestamp": "2026-09-25 11:47:17"
+  }
+]
