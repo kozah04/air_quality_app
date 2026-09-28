@@ -1,4 +1,13 @@
+import datetime
+
 import requests
+
+
+def format_time(time_str):
+    # open-meteo gives times like "2026-09-26T00:00", this turns
+    # that into something readable like "12:00 AM"
+    dt = datetime.datetime.strptime(time_str, '%Y-%m-%dT%H:%M')
+    return dt.strftime('%I:%M %p').lstrip('0')
 
 
 class AirQualityClient:
@@ -93,6 +102,22 @@ class AirQualityClient:
         for entry in forecast_list:
             if entry['aqi'] is None:
                 continue
+            if cleanest is None or entry['aqi'] < cleanest['aqi']:
+                cleanest = entry
+        return cleanest
+
+    def find_cleanest_active_hour(self, forecast_list, start_hour=6, end_hour=22):
+        # same idea as find_cleanest_hour, but only looks at the hours
+        # when people are realistically outside (6am up to 10pm)
+        cleanest = None
+        for entry in forecast_list:
+            if entry['aqi'] is None:
+                continue
+
+            hour = datetime.datetime.strptime(entry['time'], '%Y-%m-%dT%H:%M').hour
+            if hour < start_hour or hour >= end_hour:
+                continue
+
             if cleanest is None or entry['aqi'] < cleanest['aqi']:
                 cleanest = entry
         return cleanest

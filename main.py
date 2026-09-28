@@ -3,7 +3,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
-from air_quality_client import AirQualityClient
+from air_quality_client import AirQualityClient, format_time
 from air_reading import AirReading
 from health_risk_analyzer import HealthRiskAnalyzer
 from location_history_store import LocationHistoryStore
@@ -46,6 +46,7 @@ with tab1:
                 current_data = client.get_current_air_quality(lat, lon)
                 forecast_data = client.get_forecast_air_quality(lat, lon)
                 cleanest_hour = client.find_cleanest_hour(forecast_data)
+                cleanest_active = client.find_cleanest_active_hour(forecast_data)
 
                 reading = AirReading(
                     location=name,
@@ -59,7 +60,7 @@ with tab1:
                 )
 
                 with st.spinner('Getting AI health advice...'):
-                    advice = analyzer.get_health_advice(reading, cleanest_hour)
+                    advice = analyzer.get_health_advice(reading, cleanest_hour, cleanest_active)
 
                 store.save_reading(reading)
 
@@ -67,6 +68,7 @@ with tab1:
                 # need session_state to keep the result on screen
                 st.session_state['last_reading'] = reading
                 st.session_state['last_cleanest_hour'] = cleanest_hour
+                st.session_state['last_cleanest_active'] = cleanest_active
                 st.session_state['last_advice'] = advice
 
             except ValueError as e:
@@ -79,6 +81,7 @@ with tab1:
     if 'last_reading' in st.session_state:
         reading = st.session_state['last_reading']
         cleanest_hour = st.session_state.get('last_cleanest_hour')
+        cleanest_active = st.session_state.get('last_cleanest_active')
         advice = st.session_state.get('last_advice')
 
         st.subheader(f'Results for {reading.location}')
@@ -89,7 +92,10 @@ with tab1:
         st.write(f'**Nitrogen dioxide:** {reading.nitrogen_dioxide}')
 
         if cleanest_hour:
-            st.write(f"**Cleanest hour today looks like:** {cleanest_hour['time']}")
+            st.write(f"**Cleanest hour today (overall):** {format_time(cleanest_hour['time'])}")
+
+        if cleanest_active:
+            st.write(f"**Cleanest hour, 6 AM to 10 PM:** {format_time(cleanest_active['time'])}")
 
         st.info(advice)
 

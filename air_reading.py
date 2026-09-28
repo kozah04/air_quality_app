@@ -21,7 +21,7 @@ class AirReading:
             self.timestamp = timestamp
 
     def to_dict(self):
-        # convert to a dict so we can store  it into json
+        # convert to a dict so we can dump it into json
         return {
             'location': self.location,
             'latitude': self.latitude,

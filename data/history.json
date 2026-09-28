@@ -130,5 +130,82 @@
     "ozone": 55.0,
     "nitrogen_dioxide": 7.6,
     "timestamp": "2026-09-26 22:12:30"
+  },
+  {
+    "location": "Abia",
+    "latitude": 0.86667,
+    "longitude": 29.66667,
+    "aqi": 55,
+    "pm2_5": 9.2,
+    "pm10": 9.7,
+    "ozone": 23.0,
+    "nitrogen_dioxide": 3.0,
+    "timestamp": "2026-09-26 22:33:31"
+  },
+  {
+    "location": "Abia",
+    "latitude": 0.86667,
+    "longitude": 29.66667,
+    "aqi": 55,
+    "pm2_5": 9.2,
+    "pm10": 9.7,
+    "ozone": 23.0,
+    "nitrogen_dioxide": 3.0,
+    "timestamp": "2026-09-26 22:36:46"
+  },
+  {
+    "location": "Abia",
+    "latitude": 0.86667,
+    "longitude": 29.66667,
+    "aqi": 45,
+    "pm2_5": 4.4,
+    "pm10": 4.5,
+    "ozone": 23.0,
+    "nitrogen_dioxide": 1.4,
+    "timestamp": "2026-09-27 18:12:47"
+  },
+  {
+    "location": "Calabar",
+    "latitude": 4.95893,
+    "longitude": 8.32695,
+    "aqi": 46,
+    "pm2_5": 7.3,
+    "pm10": 7.5,
+    "ozone": 36.0,
+    "nitrogen_dioxide": 2.7,
+    "timestamp": "2026-09-28 09:46:45"
+  },
+  {
+    "location": "Zamfarawa",
+    "latitude": 11.80931,
+    "longitude": 7.84464,
+    "aqi": 104,
+    "pm2_5": 43.2,
+    "pm10": 53.6,
+    "ozone": 82.0,
+    "nitrogen_dioxide": 5.5,
+    "timestamp": "2026-09-28 09:47:56"
+  },
+  {
+    "location": "Katsina",
+    "latitude": 12.99082,
+    "longitude": 7.60177,
+    "aqi": 118,
+    "pm2_5": 48.4,
+    "pm10": 73.1,
+    "ozone": 121.0,
+    "nitrogen_dioxide": 2.7,
+    "timestamp": "2026-09-28 10:09:55"
+  },
+  {
+    "location": "Surulere",
+    "latitude": 6.50153,
+    "longitude": 3.35808,
+    "aqi": 54,
+    "pm2_5": 10.6,
+    "pm10": 13.0,
+    "ozone": 67.0,
+    "nitrogen_dioxide": 4.3,
+    "timestamp": "2026-09-28 10:58:21"
   }
 ]
