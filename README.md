@@ -23,7 +23,6 @@ air_quality_app/
 ├── location_history_store.py   # Saves and loads history and favourites (JSON)
 ├── validators.py               # Regex checks on user input
 ├── requirements.txt            # Python packages the app needs
-├── air_quality_app_walkthrough.ipynb   # Notebook explaining every file
 ├── .env.example                # Template for your API key file
 ├── .gitignore
 ├── data/                       # history.json and favourites.json live here
